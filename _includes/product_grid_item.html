@@ -18,6 +18,6 @@
             {% assign category_page = product_page.category | get_page_by_file_path %}
             <span class="product-grid__category"> {{ category_page.title }} </span>
         {% endif %}
-        <span class="product-grid__price"> ${{ product_page.price }} </span>
+        <span class="product-grid__price"> {{ product_page.price }} </span>
     </div>
 </li>
